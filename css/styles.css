@@ -21,6 +21,7 @@ header {
 .nav-bar {
   display: block;
   position: fixed;
+  top: 0;
   width: 20em;
   border: 1px solid;
   height: 100vh;
@@ -28,8 +29,7 @@ header {
 }
 
 .main-doc {
-  position: absolute;
-  left: 22em;
+  margin-left: 14em;
 }
 
 ul {
@@ -49,12 +49,4 @@ li:last-of-type {
 
 li:first-of-type {
   border-top: 1px solid;
-}
-
-section {
-  display: block;
-}
-
-p {
-  display: block;
 }
