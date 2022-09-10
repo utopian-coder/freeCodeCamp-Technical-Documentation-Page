@@ -13,40 +13,69 @@ a:hover {
   color: rgb(8, 0, 255);
 }
 
+code {
+  display: block;
+  background-color: rgb(242, 242, 242);
+  border-radius: 0.2em;
+  margin: 2em 4em;
+  min-height: 5em;
+  padding: 2em;
+}
+
 header {
   padding-top: 0.5em;
   font-size: 1.5rem;
 }
 
-.nav-bar {
-  display: block;
+p {
+  padding: 0 2em;
+}
+
+#navbar {
   position: fixed;
   top: 0;
   width: 20em;
   border: 1px solid;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 
-.main-doc {
-  margin-left: 14em;
+#main-doc {
+  position: absolute;
+  margin-left: 22em;
 }
 
-ul {
+#navbar ul {
   padding: 0;
 }
 
-li {
+#navbar li {
   padding: 0.9em;
   border-bottom: 1px solid;
   list-style: none;
   font-size: 0.8rem;
 }
 
-li:last-of-type {
+#navbar li:last-of-type {
   border-bottom: none;
 }
 
-li:first-of-type {
+#navbar li:first-of-type {
   border-top: 1px solid;
+}
+
+#main-doc li {
+  margin: 1em 2em;
+}
+
+@media screen and (max-width: 650px) {
+  #navbar {
+    position: relative;
+    width: auto;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 1em;
+  }
 }
